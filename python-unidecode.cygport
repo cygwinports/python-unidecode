@@ -1,8 +1,8 @@
 ORIG_PN="Unidecode"
-inherit python-distutils
+inherit python-wheel
 
 NAME="python-unidecode"
-VERSION=0.04.17
+VERSION=0.04.20
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python Unicode transliteration module"
@@ -12,3 +12,5 @@ where the compromises taken when mapping between two character sets are chosen
 to be near what a human with a US keyboard would choose."
 
 ARCH=noarch
+
+python3_unidecode_CONTENTS="usr/bin/unidecode ${python3_unidecode_CONTENTS}"
