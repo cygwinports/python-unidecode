@@ -2,7 +2,7 @@ ORIG_PN="Unidecode"
 inherit python-wheel
 
 NAME="python-unidecode"
-VERSION=0.04.20
+VERSION=1.0.23
 RELEASE=1
 CATEGORY="Python"
 SUMMARY="Python Unicode transliteration module"
@@ -13,4 +13,4 @@ to be near what a human with a US keyboard would choose."
 
 ARCH=noarch
 
-python3_unidecode_CONTENTS="usr/bin/unidecode ${python3_unidecode_CONTENTS}"
+python37_unidecode_CONTENTS+=" usr/bin/unidecode"
